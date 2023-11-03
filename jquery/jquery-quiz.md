@@ -1009,7 +1009,7 @@ $('.leaf').closest('.items');
 $('.leaf').parents('.items');
 ```
 
-- [ ] `.closest()` returns `.leaf` and `#main-menu`; `.parents()` returns `#main-menu` and `#sub-menu`.
+- [x] `.closest()` returns `.leaf` and `#main-menu`; `.parents()` returns `#main-menu` and `#sub-menu`.
 - [ ] `.closest()` returns `.leaf` and `#sub-menu`; `.parents()` returns `#main-menu` and `#sub-menu`.
 - [ ] `.closest()` returns only `#main-menu`; `.parents()` returns `#main-menu` and `#sub-menu`.
 - [ ] `.closest()` returns only `#sub-menu`; `.parents()` returns `#main-menu` and `#sub-menu`.
@@ -1424,9 +1424,9 @@ $('#element')
 #### Q72. If your JavaScript project involves a lot of DOM manipulation, but no AJAX or animation, which version of jQuery should you use?
 
 - [ ] jQuery 3 compressed
-- [ ] jQuery 3 slim
+- [x] jQuery 3 slim
 - [ ] jQuery 2
-- [x] None of these - jQuery requires AJAX
+- [ ] None of these - jQuery requires AJAX
 
 #### Q73. The `.ready()` function is one of the most basic parts of jQuery, but jQuery also provides a mechanism for executing code when both one or more Promises have resolved and the DOM is ready. Which code snippet accomplishes this?
 
@@ -1444,34 +1444,31 @@ $(function({
 - [ ] B
 
 ```js
-$($.get('http://httpbin.org/get'), $.get('http://httpbin.org/delay/3')).then(function (
-  getData,
-  delayedData,
-) {
-  //DOM is ready, getData and delayedData are available
-});
+$($.get('http://httpbin.org/get'), $.get('http://httpbin.org/delay/3')).then(
+  function (getData, delayedData) {
+    //DOM is ready, getData and delayedData are available
+  },
+);
 ```
 
 - [ ] C
 
 ```js
-$.when($.get('http://httpbin.org/get'), $.get('http://httpbin.org/delay/3')).then(function (
-  getData,
-  delayedData,
-) {
-  //DOM is ready, getData and delayedData are available
-});
+$.when($.get('http://httpbin.org/get'), $.get('http://httpbin.org/delay/3')).then(
+  function (getData, delayedData) {
+    //DOM is ready, getData and delayedData are available
+  },
+);
 ```
 
 - [x] D
 
 ```js
-$.ready($.get('http://httpbin.org/get'), $.get('http://httpbin.org/delay/3')).then(function (
-  getData,
-  delayedData,
-) {
-  //DOM is ready, getData and delayedData are available
-});
+$.ready($.get('http://httpbin.org/get'), $.get('http://httpbin.org/delay/3')).then(
+  function (getData, delayedData) {
+    //DOM is ready, getData and delayedData are available
+  },
+);
 ```
 
 #### Q74. You want to take an element and any event handlers that go with it out of the DOM to do some work—without the changes affecting the rest of the page—and then move it somewhere else in the DOM, like right after the opening tag. What should go on the first line of this code snippet?
@@ -1613,7 +1610,7 @@ $('.menu').find('a').css('color', 'red').end().find('.active').hide();
 
 - [ ] It changes the menu items in the first list to red, then hides the second list of menu items.
 - [ ] It changes all menu items in both lists to red, then hides all items with the active class.
-- [ ] It changes the menu items in the first list to red, then hides the item in the first list with the active class.
+- [x] It changes the menu items in the first list to red, then hides the item in the first list with the active class.
 - [ ] It changes the menu items in the first list to red, then returns the selection with no further changes.
 
 #### Q85. A jQuery selection acts on the HTML below, which selects the active menu item. What can you chain onto this selection to select the #main nav tag and add a class called "processed" to it?
@@ -1642,3 +1639,12 @@ $('a.active').addClass('hover');
 - [ ] when you want to time jQuery animations and CSS animations, since addClass has no duration setting
 - [x] all of these answers
 - [ ] when you want to time custom animations of several different elements without lots of nested callbacks
+
+#### Q87. Which symbol is commonly used to represent the jQuery object?
+
+- [x] $
+- [ ] #
+- [ ] %
+- [ ] &
+
+[Source: Stack Overflow](https://stackoverflow.com/questions/8667736/what-does-the-sign-mean-in-jquery-or-javascript)

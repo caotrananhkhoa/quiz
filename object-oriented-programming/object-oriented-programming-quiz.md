@@ -268,7 +268,7 @@ Association is a semantically weak relationship (a semantic dependency) between 
 - [x] method overloading, because it allows the creation of several methods with the same name, wich differ by the type of input via parameter
 - [ ] method overriding, because it display the same method name, different parameters, and same return type
 
-#### Q36. What is the purpose of static constructor?
+#### Q36. What is the usage of static constructor?
 
 - [ ] to initialize all the members with static value
 - [ ] to delete the static members when not required
@@ -804,37 +804,37 @@ public class Honda extends Car{}
 #### Q105.What is the most accurate example of the Liskov substitution principle?
 
 - [ ] A
-public class Car{
-}
-public class FlyingCars extends Car{
-   public void fly(){}
-}
-public class Tesla FlyingCar{}
-public class Honda Car{}
+      public class Car{
+      }
+      public class FlyingCars extends Car{
+      public void fly(){}
+      }
+      public class Tesla FlyingCar{}
+      public class Honda Car{}
 
 - [ ] B
-public class Car{
-   public void fly(){}
-}
-public class Tesla extends Car{}
-public class Honda extends Car{}
+      public class Car{
+      public void fly(){}
+      }
+      public class Tesla extends Car{}
+      public class Honda extends Car{}
 
 - [ ] C
-public class Car{
-public void fly(){}
-}
-public class Tesla Car{}
-public class Honda Car{}
+      public class Car{
+      public void fly(){}
+      }
+      public class Tesla Car{}
+      public class Honda Car{}
 
 - [x] D
-public class Car{
-}
-public class FlyingCars extends Car{
-   public void fly(){}
-}
-public class Tesla extends FlyingCar{}
-public class Honda extends Car{}
-[reference link](https://stackoverflow.com/a/44913313/1573267)
+      public class Car{
+      }
+      public class FlyingCars extends Car{
+      public void fly(){}
+      }
+      public class Tesla extends FlyingCar{}
+      public class Honda extends Car{}
+      [reference link](https://stackoverflow.com/a/44913313/1573267)
 
 #### Q106 what describes an agrregation
 
@@ -856,6 +856,7 @@ public class Honda extends Car{}
 - [ ] overloading member functions
 - [x] static member functions
 - [ ] overloading predefined operator
+
 #### Q109. An instance of which type of class cannot be created?
 
 - [ ] Protected class
@@ -890,3 +891,66 @@ public class Honda extends Car{}
 - [ ] color : red
 - [x] planet : moon
 - [ ] truck : window
+
+#### Q114. Which choice is a benefit of using dependency injection?
+
+- [x] loose coupling
+- [ ] code reusability
+- [ ] lazy initialization
+- [ ] data abstraction
+
+#### Q115. **\_** describes an aggregation
+
+- [ ] A class of resources
+- [ ] A group of methods
+- [x] A collection of objects
+- [ ] A list of children
+
+#### Q116. Which type of function can be used for polymorphism?
+
+- [x] virtual function
+- [ ] inline function
+- [ ] undefined function
+- [ ] private function
+
+#### Q117. Which choice is a benefit of using dependency injection?
+
+- [x] loose coupling
+- [ ] code reusability
+- [ ] lazy initialization
+- [ ] data abstraction
+
+#### Q118. Are you required to return an object if it was passed by reference to a function, and why or why not?
+
+- [ ] Yes, the caller function needs to reflect the changes.
+- [ ] No, you should use a global variable instead.
+- [x] No, changes will be automatically reflected in the calling function.
+- [ ] Yes, the object must be the same in the caller function.
+
+#### Q119. From the SOLID principles of object-oriented programming, which statement best describes the Liskov substitution principle?
+
+- [ ] A class should have only a single responsibility—that is, only changes to one part of the software's specification should be able to affect the specification of the class.
+- [ ] Software entities should be open for extension, but closed for modification.
+- [ ] Many client-specific interfaces are better than one general-purpose interface.
+- [x] objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
+
+#### Q120. In addition to responsibilities, what should be listed on Class-responsability-collaboration (CRC) cards?
+
+- [ ] which programming language will be used.
+- [ ] the programmer responsible for implementation.
+- [x] interacting classes.
+- [ ] attributes.
+
+#### Q121. What is the best name for the function that corrects this assessment?
+
+- [ ] makeResult()
+- [ ] questionScore()
+- [x] calculateScore()
+- [ ] getAnswers()
+
+#### Q122. Who invented OOP?
+
+- [ ] Andrea Ferro
+- [ ] Adele Goldberg
+- [x] Alan Kay
+- [ ] Dennis Ritchie
